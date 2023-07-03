@@ -16,7 +16,7 @@
     kmap)
   "Basic mode map for `seamstress-run'.")
 
-(defvar seamstress-prompt-regexp "^ >"
+(defvar seamstress-prompt-regexp "[^\n]*\\(>[\t ]+\\)+$"
   "Prompt for `seamstress-run'.")
 
 
