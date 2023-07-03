@@ -46,7 +46,7 @@
 
 (defun seamstress-run-current-script ()
   (interactive)
-  (let* (((script-path (buffer-file-name)))
+  (let* ((script-path (buffer-file-name))
          (default-directory (file-name-directory script-path))
          (seamstress-cli-arguments `("-s" ,(file-name-sans-extension (file-name-nondirectory script-path)))))
     (seamstress-run)))
